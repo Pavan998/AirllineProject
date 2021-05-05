@@ -60,7 +60,10 @@ public class EmployeeServlet extends HttpServlet {
 		Employee e = iter.next();
 		pw.println("<tr>");
 		pw.println("<td>Employee Number</td><td>"+e.getEmployeeNumber()+"</td>");
+		pw.println("<td>Employee Name</td><td>"+e.getEmployeeName()+"</td>");
+		pw.println("<td>Employee Job</td><td>"+e.getEmployeeJob()+"</td>");
 		pw.println("</tr>");
+	
 	}
 	pw.println("</table>");
 	}
